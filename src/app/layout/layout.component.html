@@ -1,0 +1,93 @@
+<div class="container-fluid header_cls">
+  <div id="GIMS_logo" class="row">
+    <div class="col-sm-2">
+      <div class="col-sm-3 sidenav" id="mySidenav">
+        <button class=" btndef_none icon-burger_menu" aria-label="menu" (click)="openMeu()">
+          <span class="title_cls">{{title}}</span>
+        </button>
+        <div id="sidebar-wrapper">
+          <ul class="sidebar-nav nav-pills nav-stacked" id="menu">
+
+            <li >
+              <a href="#" title="Home">
+                <span class="pull-left" style="margin-left:-50px">
+                  <i class="icon-home"></i>
+                </span>Home</a>
+            </li>
+            <li class="active" title="Intitiate">
+              <a href="#">
+                <span class="pull-left" style="margin-left:-50px">
+                  <i class="icon-circle_add"></i>
+                </span> Intitiate</a>
+            </li>
+            <li>
+              <a href="#" title="My Applications">
+                <span class="pull-left" style="margin-left:-50px">
+                  <i class="icon-Initiate"></i>
+                </span>My Applications</a>
+            </li>
+            <li>
+              <a href="#" title="My Tasks">
+                <span class="pull-left" style="margin-left:-50px">
+                  <i class="icon-assessment"></i>
+                </span>My Tasks</a>
+            </li>
+            <li>
+              <a href="#" title="Knowledge Base">
+                <span class="pull-left" style="margin-left:-50px">
+                  <i class="icon-map"></i>
+                </span>Knowledge Base</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <h1 class="pull-left  title_cls">Wipro GIMS</h1>
+    </div>
+    <div class="col-sm-6"></div>
+    <div id="GIMS_options" class="col-sm-3 float-right paddingtop10">
+
+      <button routerLink="/" class="float-right btndef_none icon-logout" aria-label="Logout" title="Logout"></button>
+      <img class="round shadow-box float-right" aria-label="GIMS" src="assets/user.png" />
+      <button routerLink="/" class="float-right btndef_none icon-settings" aria-label="Settings" title="Settings"></button>
+    </div>
+  </div>
+</div>
+
+<div id="dash" class="container-fluid full-height">
+  <div class="layout-bg">
+    <div class="col-md-12 col-sm-12 col-xs-12"> </div>
+    <div class="col-md-2 col-sm-2 col-xs-2"></div>
+    <div class="col-md-2 col-sm-2 col-xs-10" style="padding-top: 30px">
+      <h4 class="title-text"> Intiate a New Request</h4>
+      <ul class="checkout-bar">
+        <li class="nav-progress active-tab">
+          <span class="dot active-nav"></span>
+          <a href="#get-started" data-toggle="tab" class="margin-l-10">Intiation</a>
+        </li>
+        <li class="nav-progress margin-t-10">
+          <span class="dot "></span>
+          <a href="#about-you" data-toggle="tab" class="margin-l-10">Online Non-Immigrant Visa</a>
+        </li>
+        <li class="nav-progress margin-t-10">
+          <span class="dot"></span>
+          <a href="#looking-for" data-toggle="tab" class="margin-l-10">Questionnaire</a>
+        </li>
+        <li class="nav-progress margin-t-10">
+          <span class="dot"></span>
+          <a href="#" class="margin-l-10">Application Forms</a>
+        </li>
+        <li class="nav-progress margin-t-10">
+          <span class="dot"></span>
+          <a href="#" class="margin-l-10">Supporting Documents</a>
+        </li>
+        <li class="nav-progress margin-t-10">
+          <span class="dot"></span>
+          <a href="#" class="margin-l-10">Application Life Cycle</a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-8 col-sm-6 col-xs-12 mar-t-10">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

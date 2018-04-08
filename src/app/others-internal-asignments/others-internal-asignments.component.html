@@ -1,0 +1,304 @@
+<mat-card-content>
+  <h4></h4>
+
+  <div class="col-md-9 col-sm-9 col-xs-9">
+    <mat-radio-group>
+      <div class="col-md-6 col-sm-6 col-xs-6">
+        <mat-radio-button color="primary" value="1" (change)="assignmentType($event)">For Self</mat-radio-button>
+      </div>
+      <div class="col-md-4 col-sm-4 col-xs-6">
+        <mat-radio-button color="primary" value="2" checked="assinmentType" (change)="assignmentType($event)">For Others</mat-radio-button>
+      </div>
+    </mat-radio-group>
+
+    <form class="form">
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <mat-form-field class="full-width">
+          <mat-select placeholder="Work Permit / Visa Type" required (change)="setVisaType($event)">
+            <mat-option *ngFor="let type of visaType" [value]="type.value">
+              {{ type.viewValue }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div *ngIf="WorkPermitStagingFlag">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <h6 class="title_text">Base Application Details</h6>
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12">
+        
+          <mat-form-field class="full-width">
+            <input matInput placeholder="Employee Number">
+            <i class="icon-search pull-right" aria-label="Search"></i>
+          </mat-form-field>
+        
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12 center-text mar-t-10" *ngFor="let element of dataSource">
+          <div class="col-md-1 col-sm-4 col-xs-4 ">
+            <mat-radio-button color="primary"></mat-radio-button>
+          </div>
+          <div class="col-md-3 col-sm-4 col-xs-4 ">
+            <p class="block">Application # </p>
+            <p class="block">{{element.Application}}</p>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-4">
+            <p class="block">Destination Country</p>
+            <p class="block">{{element.destination}}</p>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-4">
+            <p class="block">Request Sub Type</p>
+            <p class="block">{{element.request}}</p>
+        
+          </div>
+        </div>
+      </div>
+
+      <div *ngIf="!WorkPermitStagingFlag">
+        <div *ngIf="workPermitProcessingFlag">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <h6 class="title_text">Base Application Details</h6>
+          </div>
+          <div class="col-md-12 col-sm-12 col-xs-12 center-text mar-t-10" *ngFor="let element of dataSource">
+            <div class="col-md-1 col-sm-4 col-xs-4 ">
+              <mat-radio-button color="primary"></mat-radio-button>
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-4 ">
+              <p class="block">Application # </p>
+              <p class="block">{{element.Application}}</p>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-4">
+              <p class="block">Destination Country</p>
+              <p class="block">{{element.destination}}</p>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-4">
+              <p class="block">Request Sub Type</p>
+              <p class="block">{{element.request}}</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <h6 class="title_text">General Details</h6>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <mat-form-field class="full-width">
+            <mat-select placeholder="Assignment Location" required>
+              <!-- <mat-option *ngFor="let food of foods" [value]="food.value">
+                      {{ food.viewValue }}
+                    </mat-option> -->
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <mat-form-field class="full-width">
+            <mat-select placeholder="Assignment For" required>
+              <!-- <mat-option *ngFor="let food of foods" [value]="food.value">
+                          {{ food.viewValue }}
+                        </mat-option> -->
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <div class="col-md-6 col-sm-12 col-xs-12">
+          <mat-form-field class="full-width">
+            <mat-select placeholder="Wipro Divisons" required>
+              <!-- <mat-option *ngFor="let food of foods" [value]="food.value">
+                        {{ food.viewValue }}
+                      </mat-option> -->
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <mat-form-field class="full-width">
+            <mat-select placeholder="Source Country" required>
+              <!-- <mat-option *ngFor="let food of foods" [value]="food.value">
+                            {{ food.viewValue }}
+                          </mat-option> -->
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <mat-form-field class="full-width">
+            <mat-select placeholder="Destination Country" required>
+              <!-- <mat-option *ngFor="let food of foods" [value]="food.value">
+                              {{ food.viewValue }}
+                            </mat-option> -->
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <div class="col-md-6  col-sm-12 col-xs-12">
+          <mat-form-field class="full-width">
+            <mat-select placeholder="Visa Sub Type" required>
+              <!-- <mat-option *ngFor="let food of foods" [value]="food.value">
+                              {{ food.viewValue }}
+                            </mat-option> -->
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12" *ngIf="!flagOtherDetails">
+          <mat-form-field class="full-width">
+            <mat-select placeholder="Type of E/A/T Application" required>
+              <!-- <mat-option *ngFor="let food of foods" [value]="food.value">
+                              {{ food.viewValue }}
+                            </mat-option> -->
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12" *ngIf="!flagOtherDetails">
+          <mat-form-field class="full-width">
+            <mat-select placeholder="Processing Type" required>
+              <!-- <mat-option *ngFor="let food of foods" [value]="food.value">
+                                {{ food.viewValue }}
+                              </mat-option> -->
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <div *ngIf="!workPermitProcessingFlag">
+          <div class="col-md-8 col-sm-12 col-xs-12">
+            <h6 class="title_text">Customer Details</h6>
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-12 mar-t-10">
+            <mat-form-field class="full-width">
+              <input matInput placeholder="Customer Name" value="Wipro" readonly>
+            </mat-form-field>
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-12 mar-t-10">
+            <mat-form-field class="full-width">
+              <input matInput placeholder="Project Name" value="GIMS" readonly>
+            </mat-form-field>
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <mat-form-field class="full-width">
+              <input matInput placeholder="Approving Authority" value="Premzi" readonly>
+            </mat-form-field>
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <mat-form-field class="full-width">
+              <mat-select placeholder="Address Assignment" required>
+                <!-- <mat-option *ngFor="let food of foods" [value]="food.value">
+                                    {{ food.viewValue }}
+                                  </mat-option> -->
+              </mat-select>
+            </mat-form-field>
+          </div>
+        </div>
+
+        <div class="col-md-12 col-sm-12 col-xs-12" *ngIf="flagOtherDetails">
+          <h6 class="title_text">Other Details</h6>
+        </div>
+        <div *ngIf="!workPermitProcessingFlag">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+
+            <mat-form-field class="full-width">
+              <input matInput placeholder="Employee Number">
+              <i class="icon-search pull-right" aria-label="Search"></i>
+            </mat-form-field>
+
+          </div>
+          <div class="col-md-6 col-sm-12 col-xs-12">
+
+            <mat-form-field class="full-width">
+              <input matInput placeholder="Employee Number" readonly>
+            </mat-form-field>
+
+          </div>
+          <div class="col-md-6 col-sm-12 col-xs-12">
+
+            <mat-form-field class="full-width">
+              <input matInput placeholder="Employee Name" readonly>
+            </mat-form-field>
+
+          </div>
+          <div class="col-md-12 col-sm-12 col-xs-12">
+
+            <mat-form-field class="full-width">
+              <input matInput placeholder="Approving Authority" readonly>
+            </mat-form-field>
+
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12" *ngIf="flagOtherDetails">
+          <mat-form-field class="full-width">
+            <input matInput [matDatepicker]="picker" required placeholder="Assignment Start Date" class="full-width">
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12" *ngIf="flagOtherDetails">
+          <mat-form-field class="full-width">
+            <input matInput [matDatepicker]="picker1" required placeholder="Assignment End Date" class="full-width">
+            <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+            <mat-datepicker #picker1></mat-datepicker>
+          </mat-form-field>
+        </div>
+        <div *ngIf="!workPermitProcessingFlag">
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <mat-form-field class="full-width">
+              <mat-select placeholder="Employee Role" required>
+                <!-- <mat-option *ngFor="let food of foods" [value]="food.value">
+                                  {{ food.viewValue }}
+                                </mat-option> -->
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <mat-form-field class="full-width">
+              <mat-select placeholder="Immigration Role" required>
+                <!-- <mat-option *ngFor="let food of foods" [value]="food.value">
+                                  {{ food.viewValue }}
+                                </mat-option> -->
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <mat-form-field class="full-width">
+              <input matInput placeholder="IMS Eligiblity" value="IMS Eligiblity" readonly>
+            </mat-form-field>
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <mat-form-field class="full-width">
+              <input matInput placeholder="Competency Eligiblity" value="Competency Eligiblity" readonly>
+            </mat-form-field>
+          </div>
+        </div>
+        <div *ngIf="workPermitProcessingFlag">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <mat-checkbox color="primary" (change)=selectAllDependent($event) [(ngModel)]="selectAllDepent">Select All The Dependencies</mat-checkbox>
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-6">
+            <mat-checkbox color="primary" [(ngModel)]="selectAllDepent">Vidya Shree</mat-checkbox>
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-6">
+            <mat-checkbox color="primary" [(ngModel)]="selectAllDepent">Joshika</mat-checkbox>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  <!-- <div class="col-md-1 col-sm-1 col-xs-1">
+  </div> -->
+  <div class="col-md-3 col-sm-3 col-xs-3 disclaimer  ">
+    <p class="title-disc">Disclaimer</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla tenetur voluptatem cumque nobis fugiat excepturi, ut officia,
+      sapiente nam quis, natus laboriosam provident dicta necessitatibus enim a nisi dolores distinctio? Lorem ipsum dolor
+      sit amet consectetur adipisicing elit. Temporibus autem, ab hic asperiores labore velit blanditiis in iure quos esse.
+      Quia rem commodi tempora dolorem amet sint molestiae laudantium! Accusamus. Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Atque, nobis est aperiam, velit voluptates earum rem in nulla, quam quis fugit aut ex recusandae
+      adipisci! Architecto nulla temporibus ex quibusdam?
+    </p>
+  </div>
+
+</mat-card-content>
+
+
+
+<div class="col-md-12 col-sm-12 col-xs-12" id="footer">
+  <div class="col-md-8 col-sm-4 col-xs-4">
+    <button mat-raised-button class="light-blue">Back</button>
+  </div>
+  <div class="col-md-2 col-sm-4 col-xs-4 center">
+    <button mat-raised-button color="warn">Reset</button>
+  </div>
+  <div class="col-md-2 col-sm-4 col-xs-4 center">
+    <button mat-raised-button color="primary">Submit</button>
+  </div>
+</div>

@@ -1,0 +1,22 @@
+<mat-card class="card">
+  <div class="col-md-12 col-sm-12 col-xs-12">
+    <div class="col-md-6 col-sm-6 col-xs-6">
+      <h6 class="title_text padding-left">Intitiation</h6>
+    </div>
+    <div class="col-md-6 col-sm-6 col-xs-6 ">
+      <button mat-raised-button class="pull-right dark-blue">LCA Intitiation</button>
+    </div>
+    <div class="col-md-12 col-sm-12 col-xs-12 ">
+      <mat-form-field [style.width]="'100%'">
+        <input matInput placeholder="1/2 Select Request Type" aria-label="Service Point" [matAutocomplete]="auto" name="servicePointName"
+          #serviceName (keyup)="requestService(serviceName.value)">
+        <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
+          <mat-option *ngFor="let service of requestedProfile" [value]="service.serviceName" (click)="serviceCall(service)"> {{ service.serviceName }}</mat-option>
+
+        </mat-autocomplete>
+
+      </mat-form-field>
+    </div>
+  </div>
+  <router-outlet></router-outlet>
+</mat-card>

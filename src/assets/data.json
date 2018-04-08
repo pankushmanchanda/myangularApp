@@ -1,0 +1,379 @@
+[
+  {
+    "AssignmentLocation": [
+      {
+        "value": 0,
+        "name": "Other than Customer Location"
+      },
+      {
+        "value": 1,
+        "name": "Other than Wipro Location"
+      },
+      {
+        "value": 2,
+        "name": "Work From Wipro Location"
+      }
+    ],
+    "AssignmentFor": [
+      {
+        "value": 0,
+        "name": "Wipro Internal Assignment"
+      },
+      {
+        "value": 1,
+        "name": "Wipro Client Assignment"
+      },
+      {
+        "value": 2,
+        "name": "Wipro Customer Assignment"
+      }
+    ],
+    "WiproDivison": [
+      {
+        "value": 0,
+        "name": "Wipro Limited"
+      },
+      {
+        "value": 1,
+        "name": "Wipro Tecghnologies"
+      },
+      {
+        "value": 2,
+        "name": "Wipro Infotech"
+      }
+    ],
+    "sourceCountry": [
+      {
+        "value": 0,
+        "name": "Ghana"
+      },
+      {
+        "value": 1,
+        "name": "Greece"
+      },
+      {
+        "value": 2,
+        "name": "Burkina Faso"
+      },
+      {
+        "value": 3,
+        "name": "Marshall Islands"
+      },
+      {
+        "value": 4,
+        "name": "Virgin Islands (US)"
+      },
+      {
+        "value": 5,
+        "name": "Ecuador"
+      },
+      {
+        "value": 6,
+        "name": "Lesotho"
+      },
+      {
+        "value": 7,
+        "name": "US Minor Outlying Islands"
+      },
+      {
+        "value": 8,
+        "name": "Yugoslavia"
+      },
+      {
+        "value": 9,
+        "name": "South Africa"
+      }
+    ],
+    "destinationCountry": [
+      {
+        "value": 0,
+        "name": "Korea (South)"
+      },
+      {
+        "value": 1,
+        "name": "Canada"
+      },
+      {
+        "value": 2,
+        "name": "Panama"
+      },
+      {
+        "value": 3,
+        "name": "Tuvalu"
+      },
+      {
+        "value": 4,
+        "name": "Ethiopia"
+      },
+      {
+        "value": 5,
+        "name": "Tonga"
+      },
+      {
+        "value": 6,
+        "name": "Norfolk Island"
+      },
+      {
+        "value": 7,
+        "name": "Vatican City State (Holy See)"
+      },
+      {
+        "value": 8,
+        "name": "St. Pierre and Miquelon"
+      },
+      {
+        "value": 9,
+        "name": "Guadeloupe"
+      }
+    ],
+    "viewSubType": [
+      {
+        "value": 0,
+        "name": "Kerry"
+      },
+      {
+        "value": 1,
+        "name": "Cook"
+      },
+      {
+        "value": 2,
+        "name": "Cooley"
+      },
+      {
+        "value": 3,
+        "name": "Robles"
+      },
+      {
+        "value": 4,
+        "name": "Roslyn"
+      }
+    ],
+    "state": [
+      {
+        "value": 0,
+        "name": "Montana"
+      },
+      {
+        "value": 1,
+        "name": "Oklahoma"
+      },
+      {
+        "value": 2,
+        "name": "Hawaii"
+      },
+      {
+        "value": 3,
+        "name": "Northern Mariana Islands"
+      },
+      {
+        "value": 4,
+        "name": "New Hampshire"
+      },
+      {
+        "value": 5,
+        "name": "New Mexico"
+      },
+      {
+        "value": 6,
+        "name": "California"
+      },
+      {
+        "value": 7,
+        "name": "Nevada"
+      },
+      {
+        "value": 8,
+        "name": "Federated States Of Micronesia"
+      },
+      {
+        "value": 9,
+        "name": "South Carolina"
+      }
+    ],
+    "city": [
+      {
+        "value": 0,
+        "name": "Saddlebrooke"
+      },
+      {
+        "value": 1,
+        "name": "Homeland"
+      },
+      {
+        "value": 2,
+        "name": "Abiquiu"
+      },
+      {
+        "value": 3,
+        "name": "Roeville"
+      },
+      {
+        "value": 4,
+        "name": "Crayne"
+      },
+      {
+        "value": 5,
+        "name": "Wintersburg"
+      },
+      {
+        "value": 6,
+        "name": "Johnsonburg"
+      },
+      {
+        "value": 7,
+        "name": "Cumberland"
+      },
+      {
+        "value": 8,
+        "name": "Malott"
+      },
+      {
+        "value": 9,
+        "name": "Sunwest"
+      }
+    ],
+    "projects": [
+      {
+        "value": 0,
+        "name": "Levy"
+      },
+      {
+        "value": 1,
+        "name": "Inez"
+      },
+      {
+        "value": 2,
+        "name": "Millicent"
+      },
+      {
+        "value": 3,
+        "name": "Felicia"
+      },
+      {
+        "value": 4,
+        "name": "Woodard"
+      },
+      {
+        "value": 5,
+        "name": "Lynn"
+      },
+      {
+        "value": 6,
+        "name": "Catherine"
+      },
+      {
+        "value": 7,
+        "name": "Kirk"
+      },
+      {
+        "value": 8,
+        "name": "Clara"
+      },
+      {
+        "value": 9,
+        "name": "Montoya"
+      }
+    ],
+    "customers": [
+      {
+        "value": 0,
+        "name": "Valerie"
+      },
+      {
+        "value": 1,
+        "name": "Atkins"
+      },
+      {
+        "value": 2,
+        "name": "Irene"
+      },
+      {
+        "value": 3,
+        "name": "Alvarez"
+      },
+      {
+        "value": 4,
+        "name": "Deirdre"
+      },
+      {
+        "value": 5,
+        "name": "Grimes"
+      },
+      {
+        "value": 6,
+        "name": "Cardenas"
+      },
+      {
+        "value": 7,
+        "name": "Hill"
+      },
+      {
+        "value": 8,
+        "name": "Jacobson"
+      },
+      {
+        "value": 9,
+        "name": "Constance"
+      }
+    ],
+    "authority": [
+      {
+        "value": 0,
+        "name": "Kari"
+      },
+      {
+        "value": 1,
+        "name": "Bryant"
+      },
+      {
+        "value": 2,
+        "name": "Fisher"
+      },
+      {
+        "value": 3,
+        "name": "Bright"
+      },
+      {
+        "value": 4,
+        "name": "Martin"
+      },
+      {
+        "value": 5,
+        "name": "Collins"
+      },
+      {
+        "value": 6,
+        "name": "Smith"
+      },
+      {
+        "value": 7,
+        "name": "Alford"
+      },
+      {
+        "value": 8,
+        "name": "Morgan"
+      },
+      {
+        "value": 9,
+        "name": "Whitney"
+      }
+    ],
+    "dataSource": [
+      {
+        "Application": "IN-226963",
+        "destination": "United States",
+        "request": "H1B Cap Exempt Premium"
+      },
+      {
+        "Application": "IN-226963",
+        "destination": "United States",
+        "request": "H1B Cap Exempt Premium"
+      }
+    ],
+    "visaType":[
+    { "value": 1, "viewValue": "Work Permit Processing" },
+    { "value": 2, "viewValue": "Work Permit Stamping" },
+    { "value": 4, "viewValue": "Extension / Amendment / Transfer" },
+    { "value": 3, "viewValue": "Others" }]
+  }
+]

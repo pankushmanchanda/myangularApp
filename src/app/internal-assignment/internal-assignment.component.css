@@ -1,0 +1,175 @@
+.no-margin{
+    margin: 0;
+}
+.left{
+    float: left;
+  }
+  .right{
+      float: right;
+  }
+
+  .card-content {
+    height:800px;
+    width:100%
+}
+.form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  .mat-header-row, .mat-row{
+      border-bottom-style: none;
+      min-height: 2px;
+  }
+  .center-text{
+text-align:center;
+padding: 0;
+  }
+  .block{
+      display: block;
+  }
+  .full-width {
+    width: 100%;
+  }
+.center{
+    text-align: center;
+}
+.dark-blue{
+background-color:darkblue;
+    border-radius:1px;
+    color: white;
+    margin-bottom: 10px;
+}
+.light-blue{
+    color:#3BB9FF;
+}
+
+.example-container {
+    display: flex;
+    flex-direction: column;
+    max-height: 200px;
+    min-width: 300px;
+  }
+  
+  .mat-table {
+    overflow: auto;
+    max-height: 200px;
+  }
+  
+  /* .mat-column-select {
+    overflow: visible;
+  } */
+#footer {
+    position: absolute;
+    bottom: 2%;
+    width: 100%;
+}
+
+.disclaimer{
+    background-color: #ECEDF7;
+    height:70%; 
+    border-radius:5px;
+}
+
+.title_text {
+    display: inline;
+    padding: 0 0 0 0;
+    font-weight: bold;
+
+}
+
+.title-disc {
+    display: inline;
+    font-weight: bold;
+    font-size: 17px;
+    color:#b3ff66;
+
+}
+
+.test {
+    width:200px;
+    display:inline-block;
+    overflow: auto;
+    white-space: nowrap;
+    margin:0px auto;
+  }
+.round-label {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    margin: auto auto;
+    border: 1px solid #ccc;
+    padding: 7px 5px;
+    -webkit-transition: box-shadow 0.3s ease-out;
+    -moz-transition: box-shadow 0.3s ease-out;
+    -o-transition: box-shadow 0.3s ease-out;
+    transition: box-shadow 0.3s ease-out;
+}
+.padding-left{
+    padding-left: 0px;
+}
+.tile {
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    margin: 5px 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.bounding_box{
+    margin: auto auto; width:95%;
+}
+
+.icon-apps:before {
+    font-size: 22px;
+}
+.mar-t-10{
+    margin-top: 10px;
+}
+@media (max-width: 600px) {
+    .card{
+        height:900px;
+        width:100%
+     }
+}
+
+@media (max-width: 481px) {
+ .card{
+    height:1300px;
+    width:100%
+ }
+ .disclaimer{
+    font-size:8px;
+}
+.title-disc {
+    display: inline;
+    font-weight: normal;
+    font-size: 10px;
+    color:#b3ff66;
+
+}
+}
+.mat-radio-button {
+color: grey;
+font-size: 13px;
+  }
+.tile>label {
+    color: #7e7e7e;
+    margin-top: 5px;
+    display: inline-block;
+    width: 60px;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+}
+
+.round-label:hover {
+    -webkit-transition: box-shadow 0.3s ease-out;
+    -moz-transition: box-shadow 0.3s ease-out;
+    -o-transition: box-shadow 0.3s ease-out;
+    transition: box-shadow 0.3s ease-out;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
