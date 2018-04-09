@@ -105,16 +105,33 @@
 .mar-t-10{
     margin-top: 10px;
 }
-@media (max-width: 600px) {
+
+@media (max-width: 801px) {
     .card{
-        height:1000px;
+        height:1200px;
         width:100%
      }
+     .disclaimer{
+         width: 0;
+         height: 0;
+        font-size:3px;
+    }
+}
+@media (max-width: 600px) {
+    .card{
+        height:1400px;
+        width:100%
+     }
+     .disclaimer{
+        width: 0;
+        height: 0;
+        font-size:2px;
+    }
 }
 
 @media (max-width: 481px) {
  .card{
-    height:1400px;
+    height:1800px;
     width:100%
  }
  .disclaimer{

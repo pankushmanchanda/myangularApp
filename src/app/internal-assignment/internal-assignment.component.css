@@ -130,26 +130,42 @@ background-color:darkblue;
 }
 @media (max-width: 600px) {
     .card{
-        height:900px;
+        height:1300px;
         width:100%
      }
+     .disclaimer{
+        font-size:15px;
+        width:100%;
+        height: 100%;
+    }
+    .title-disc {
+        display: inline;
+        font-weight: normal;
+        font-size: 10px;
+        color:#b3ff66;
+    
+    }
+ 
 }
 
 @media (max-width: 481px) {
  .card{
-    height:1300px;
+    height:1800px;
     width:100%
  }
  .disclaimer{
-    font-size:8px;
+    font-size:15px;
+    width:100%;
+    height: 100%;
 }
 .title-disc {
     display: inline;
     font-weight: normal;
-    font-size: 10px;
+    font-size: 15px;
     color:#b3ff66;
 
 }
+
 }
 .mat-radio-button {
 color: grey;

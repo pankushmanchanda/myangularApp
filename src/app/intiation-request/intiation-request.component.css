@@ -112,12 +112,12 @@
         width:100%
      }
      .disclaimer{
-        font-size:8px;
+        font-size:15px;
     }
     .title-disc {
         display: inline;
         font-weight: normal;
-        font-size: 10px;
+        font-size: 15px;
         color:#b3ff66;
     
     }
@@ -129,12 +129,12 @@
     width:100%
  }
  .disclaimer{
-    font-size:9px;
+    font-size:13px;
 }
 .title-disc {
     display: inline;
     font-weight: normal;
-    font-size: 10px;
+    font-size: 15px;
     color:#b3ff66;
 
 }

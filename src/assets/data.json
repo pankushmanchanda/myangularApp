@@ -370,10 +370,23 @@
         "request": "H1B Cap Exempt Premium"
       }
     ],
-    "visaType":[
-    { "value": 1, "viewValue": "Work Permit Processing" },
-    { "value": 2, "viewValue": "Work Permit Stamping" },
-    { "value": 4, "viewValue": "Extension / Amendment / Transfer" },
-    { "value": 3, "viewValue": "Others" }]
+    "visaType": [
+      {
+        "value": 1,
+        "viewValue": "Work Permit Processing"
+      },
+      {
+        "value": 2,
+        "viewValue": "Work Permit Stamping"
+      },
+      {
+        "value": 4,
+        "viewValue": "Extension / Amendment / Transfer"
+      },
+      {
+        "value": 3,
+        "viewValue": "Others"
+      }
+    ]
   }
 ]

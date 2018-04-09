@@ -1,201 +1,206 @@
 <mat-card-content>
-    <h4></h4>
-    <div class="col-md-8 col-sm-8 col-xs-8">
-        <div class="col-md-6 col-sm-6 col-xs-6">
+  <h4></h4>
+  <div class="col-md-8 col-sm-12 col-xs-12">
+    <div class="col-md-6 col-sm-12 col-xs-12">
       <h6 class="title_text">General Details</h6>
+    </div>
+    <form class="form">
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <mat-form-field class="full-width">
+          <mat-select name="assignmentLocation" placeholder="Assignment Location" required>
+            <mat-option *ngFor="let location of assignmentLocations" [value]="location.value">
+              {{ location.name }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
       </div>
-      <form class="form">
-        <div class="col-md-12 col-sm-12 col-xs-12">
-          <mat-form-field class="full-width">
-            <mat-select name="assignmentLocation" placeholder="Assignment Location" required>
-              <mat-option *ngFor="let location of assignmentLocations" [value]="location.value">
-                  {{ location.name }}
-                </mat-option>
-            </mat-select>
-          </mat-form-field>
-        </div>
-        <div class="col-md-12 col-sm-12 col-xs-12">
-          <mat-form-field class="full-width">
-            <mat-select name="assignmentFor" placeholder="Assignment For" required>
-              <mat-option *ngFor="let item of assignmentForlist" [value]="item.value">
-                      {{ item.name }}
-                    </mat-option>
-            </mat-select>
-          </mat-form-field>
-        </div>
-        <div class="col-md-12 col-sm-12 col-xs-12">
-          <mat-form-field class="full-width">
-            <mat-select  name="wiproDivison" placeholder="Wipro Divisons" required>
-              <mat-option *ngFor="let divison of wiproDivisons" [value]="divison.value">
-                        {{ divison.name }}
-                      </mat-option>
-            </mat-select>
-          </mat-form-field>
-        </div>
-        <div class="col-md-6 col-sm-6 col-xs-12">
-          <mat-form-field class="full-width">
-            <mat-select name="scrCountry" placeholder="Source Country" >
-              <mat-option *ngFor="let country of sourceCountries" [value]="country.value">
-                          {{ country.name }}
-                        </mat-option>
-            </mat-select>
-          </mat-form-field>
-        </div>
-        <div class="col-md-6 col-sm-6 col-xs-12">
-          <mat-form-field class="full-width">
-            <mat-select name="destCountry" placeholder="Destination Country" >
-              <mat-option *ngFor="let country of destinationCountries" [value]="country.value">
-                            {{ country.name }}
-                          </mat-option>
-            </mat-select>
-          </mat-form-field>
-        </div>
-        <div class="col-md-12 col-sm-12 col-xs-12">
-          <mat-form-field class="full-width">
-            <mat-select name="visaSubType" placeholder="Visa Sub Type" required>
-              <mat-option *ngFor="let type of viewSubtypes" [value]="type.value">
-                          {{ type.name }}
-                        </mat-option>
-            </mat-select>
-          </mat-form-field>
-        </div>
-        <div class="col-md-8 col-sm-12 col-xs-12">
-          <h6 class="title_text">Customer Details</h6>
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <mat-form-field class="full-width">
+          <mat-select name="assignmentFor" placeholder="Assignment For" required>
+            <mat-option *ngFor="let item of assignmentForlist" [value]="item.value">
+              {{ item.name }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <mat-form-field class="full-width">
+          <mat-select name="wiproDivison" placeholder="Wipro Divisons" required>
+            <mat-option *ngFor="let divison of wiproDivisons" [value]="divison.value">
+              {{ divison.name }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div class="col-md-6 col-sm-6 col-xs-12">
+        <mat-form-field class="full-width">
+          <mat-select name="scrCountry" placeholder="Source Country">
+            <mat-option *ngFor="let country of sourceCountries" [value]="country.value">
+              {{ country.name }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div class="col-md-6 col-sm-6 col-xs-12">
+        <mat-form-field class="full-width">
+          <mat-select name="destCountry" placeholder="Destination Country">
+            <mat-option *ngFor="let country of destinationCountries" [value]="country.value">
+              {{ country.name }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <mat-form-field class="full-width">
+          <mat-select name="visaSubType" placeholder="Visa Sub Type" required>
+            <mat-option *ngFor="let type of viewSubtypes" [value]="type.value">
+              {{ type.name }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div class="col-md-8 col-sm-12 col-xs-12">
+        <h6 class="title_text">Customer Details</h6>
 
 
-          <div class="dropdown mar-t-10">
-           
-            <button class="btn btn-block  btn-default dropdown-toggle light-blue left-align pull-left" type="button" data-toggle="dropdown"> <span class="icon-business pull-left" aria-label="Business"></span>Choose Customer / Project
+        <div class="dropdown mar-t-10">
 
-            </button>
-            <ul class="dropdown-menu col-sm-12">
-              <li>
-                <div class="col-md-12 col-sm-12 col-xs-12">
-                  <mat-form-field class="full-width">
-                      <span class="icon-search pull-right" aria-label="Search"></span>   <input matInput placeholder="Project Manager (Emp No./EmailId)">
-                  </mat-form-field>
-                </div>
-              </li>
-              <li>
-                <div class="col-md-12 col-sm-12 col-xs-12">
-                  <mat-form-field class="full-width">
-                    <mat-select placeholder="Project Name">
-                      <!-- <mat-option *ngFor="let project of projects" [value]="project.value">
-                                        {{ project.name }}
-                                      </mat-option> -->
-                    </mat-select>
-                  </mat-form-field>
-                </div>
+          <button class="btn btn-block  btn-default dropdown-toggle light-blue left-align pull-left" type="button" data-toggle="dropdown">
+            <span class="icon-business pull-left" aria-label="Business"></span>Choose Customer / Project
 
-              </li>
-              <li>
-                  <div class="col-md-12 col-sm-12 col-xs-12">
-                    <mat-form-field class="full-width">
-                      <mat-select placeholder="Customer Name">
-                        <!-- <mat-option *ngFor="let customer of customers" [value]="customer.value">
-                                          {{ customer.name }}
-                                        </mat-option> -->
-                      </mat-select>
-                    </mat-form-field>
-                  </div>
-  
-                </li>
-              <li>
-                <div class="col-md-12 col-sm-12 col-xs-12">
-                  <mat-form-field class="full-width">
-                    <mat-select placeholder="Approving Authority" >
-                      <!-- <mat-option *ngFor="let item of authority" [value]="item.value">
-                                        {{ item.name }}
-                                      </mat-option> -->
-                    </mat-select>
-                  </mat-form-field>
-                </div>
-              </li>
-              <li>
-                <div class="col-md-12 col-sm-12 col-xs-12">
-                  <button type="button" mat-raised-button color="primary" class="pull-right">OK</button>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md-6 col-sm-6 col-xs-12 mar-t-10">
-          <mat-form-field class="full-width">
-            <input matInput placeholder="Customer Name" value="Wipro" readonly>
-          </mat-form-field>
-        </div>
-        <div class="col-md-6 col-sm-6 col-xs-12 mar-t-10">
-          <mat-form-field class="full-width">
-            <input matInput placeholder="Project Name" value="GIMS" readonly>
-          </mat-form-field>
-        </div>
-        <div class="col-md-6 col-sm-6 col-xs-12">
-          <mat-form-field class="full-width">
-            <input matInput placeholder="Approving Authority" value="Premzi" readonly>
-          </mat-form-field>
-        </div>
-        <div class="col-md-6 col-sm-6 col-xs-12">
-          <mat-form-field class="full-width">
-            <mat-select placeholder="Address Assignment" required>
-              <!-- <mat-option *ngFor="let food of foods" [value]="food.value">
-                                    {{ food.viewValue }}
-                                  </mat-option> -->
-            </mat-select>
-          </mat-form-field>
-        </div>
-        <div class="col-md-12 col-sm-12 col-xs-12">
-            <h6 class="title_text">Other Details</h6>
-        </div>
-
-          <div class="col-md-6 col-sm-6 col-xs-12 ">
-        
-              <mat-form-field class="full-width">
-                  <input matInput [matDatepicker]="picker" required placeholder="Start Date (dd/mm/yyyy)" class="full-width">
-                  <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-                  <mat-datepicker #picker></mat-datepicker>
-              </mat-form-field>
-            </div>
-            <div class="col-md-6 col-sm-6 col-xs-12 ">
+          </button>
+          <ul class="dropdown-menu col-sm-12">
+            <li>
+              <div class="col-md-12 col-sm-12 col-xs-12">
                 <mat-form-field class="full-width">
-                    <input matInput [matDatepicker]="picker1" required placeholder="End Date (dd/mm/yyyy)" class="full-width">
-                    <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
-                    <mat-datepicker #picker1></mat-datepicker>
+                  <span class="icon-search pull-right" aria-label="Search"></span>
+                  <input matInput placeholder="Project Manager (Emp No./EmailId)">
                 </mat-form-field>
               </div>
-              <div class="col-md-6 col-sm-6 col-xs-12 ">
-                  <mat-form-field class="full-width">
-                      <mat-select placeholder="Purpose of Travel" required>
-                          <!-- <mat-option *ngFor="let food of foods" [value]="food.value">
+            </li>
+            <li>
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <mat-form-field class="full-width">
+                  <mat-select placeholder="Project Name">
+                    <!-- <mat-option *ngFor="let project of projects" [value]="project.value">
+                                        {{ project.name }}
+                                      </mat-option> -->
+                  </mat-select>
+                </mat-form-field>
+              </div>
+
+            </li>
+            <li>
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <mat-form-field class="full-width">
+                  <mat-select placeholder="Customer Name">
+                    <!-- <mat-option *ngFor="let customer of customers" [value]="customer.value">
+                                          {{ customer.name }}
+                                        </mat-option> -->
+                  </mat-select>
+                </mat-form-field>
+              </div>
+
+            </li>
+            <li>
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <mat-form-field class="full-width">
+                  <mat-select placeholder="Approving Authority">
+                    <!-- <mat-option *ngFor="let item of authority" [value]="item.value">
+                                        {{ item.name }}
+                                      </mat-option> -->
+                  </mat-select>
+                </mat-form-field>
+              </div>
+            </li>
+            <li>
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <button type="button" mat-raised-button color="primary" class="pull-right">OK</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-6 col-xs-12 mar-t-10">
+        <mat-form-field class="full-width">
+          <input matInput placeholder="Customer Name" value="Wipro" readonly>
+        </mat-form-field>
+      </div>
+      <div class="col-md-6 col-sm-6 col-xs-12 mar-t-10">
+        <mat-form-field class="full-width">
+          <input matInput placeholder="Project Name" value="GIMS" readonly>
+        </mat-form-field>
+      </div>
+      <div class="col-md-6 col-sm-6 col-xs-12">
+        <mat-form-field class="full-width">
+          <input matInput placeholder="Approving Authority" value="Premzi" readonly>
+        </mat-form-field>
+      </div>
+      <div class="col-md-6 col-sm-6 col-xs-12">
+        <mat-form-field class="full-width">
+          <mat-select placeholder="Address Assignment" required>
+            <!-- <mat-option *ngFor="let food of foods" [value]="food.value">
+                                    {{ food.viewValue }}
+                                  </mat-option> -->
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <h6 class="title_text">Other Details</h6>
+      </div>
+
+      <div class="col-md-6 col-sm-6 col-xs-12 ">
+
+        <mat-form-field class="full-width">
+          <input matInput [matDatepicker]="picker" required placeholder="Start Date (dd/mm/yyyy)" class="full-width">
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+      </div>
+      <div class="col-md-6 col-sm-6 col-xs-12 ">
+        <mat-form-field class="full-width">
+          <input matInput [matDatepicker]="picker1" required placeholder="End Date (dd/mm/yyyy)" class="full-width">
+          <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+          <mat-datepicker #picker1></mat-datepicker>
+        </mat-form-field>
+      </div>
+      <div class="col-md-6 col-sm-6 col-xs-12 ">
+        <mat-form-field class="full-width">
+          <mat-select placeholder="Purpose of Travel" required>
+            <!-- <mat-option *ngFor="let food of foods" [value]="food.value">
                                                 {{ food.viewValue }}
                                               </mat-option> -->
-                        </mat-select>
-                  </mat-form-field>
-                </div>
+          </mat-select>
+        </mat-form-field>
+      </div>
 
-      </form>
-    </div>
-    <div class="col-md-1 col-sm-1 col-xs-1">
-    </div>
-    <div class="col-md-3 col-sm-3 col-xs-3 disclaimer  mar-t-10">
-      <h5 class="title-disc">Disclaimer</h5>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla tenetur voluptatem cumque nobis fugiat excepturi, ut officia, sapiente nam quis, natus laboriosam provident dicta necessitatibus enim a nisi dolores distinctio?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus autem, ab hic asperiores labore velit blanditiis in iure quos esse. Quia rem commodi tempora dolorem amet sint molestiae laudantium! Accusamus.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, nobis est aperiam, velit voluptates earum rem in nulla, quam quis fugit aut ex recusandae adipisci! Architecto nulla temporibus ex quibusdam?
-      </p>
-    </div>
-
-  </mat-card-content>
-  <div class="col-md-12 col-sm-12 col-xs-12"></div>
-
-
-  <div class="col-md-12 col-sm-12 col-xs-12" id="footer">
-    <div class="col-md-8 col-sm-4 col-xs-4">
-      <button  type="button" mat-raised-button class="light-blue">Back</button>
-    </div>
-    <div class="col-md-2 col-sm-4 col-xs-4 center">
-      <button type="button" mat-raised-button color="warn">Reset</button>
-    </div>
-    <div class="col-md-2 col-sm-4 col-xs-4 center">
-      <button  type="button" mat-raised-button color="primary">Find</button>
-    </div>
+    </form>
   </div>
+  <div class="col-md-1 col-sm-12 col-xs-12">
+  </div>
+  <div class="col-md-3 col-sm-12 col-xs-12 disclaimer mar-t-10">
+    <h5 class="title-disc">Disclaimer</h5>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla tenetur voluptatem cumque nobis fugiat excepturi, ut officia,
+      sapiente nam quis, natus laboriosam provident dicta necessitatibus enim a nisi dolores distinctio? Lorem ipsum dolor
+      sit amet consectetur adipisicing elit. Temporibus autem, ab hic asperiores labore velit blanditiis in iure quos esse.
+      Quia rem commodi tempora dolorem amet sint molestiae laudantium! Accusamus. Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Atque, nobis est aperiam, velit voluptates earum rem in nulla, quam quis fugit aut ex recusandae
+      adipisci! Architecto nulla temporibus ex quibusdam?
+    </p>
+  </div>
+
+</mat-card-content>
+<div class="col-md-12 col-sm-12 col-xs-12"></div>
+
+
+<div class="col-md-12 col-sm-12 col-xs-12" id="footer">
+  <div class="col-md-8 col-sm-4 col-xs-4">
+    <button type="button" mat-raised-button class="light-blue">Back</button>
+  </div>
+  <div class="col-md-2 col-sm-4 col-xs-4 center">
+    <button type="button" mat-raised-button color="warn">Reset</button>
+  </div>
+  <div class="col-md-2 col-sm-4 col-xs-4 center">
+    <button type="button" mat-raised-button color="primary">Find</button>
+  </div>
+</div>

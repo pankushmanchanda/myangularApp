@@ -1,7 +1,7 @@
 <mat-card-content>
   <h4></h4>
 
-  <div class="col-md-9 col-sm-9 col-xs-9">
+  <div class="col-md-9 col-sm-12 col-xs-12">
     <mat-radio-group>
       <div class="col-md-6 col-sm-6 col-xs-6">
         <mat-radio-button color="primary" value="1" checked="assinmentType" (change)="assignmentType($event)">For Self</mat-radio-button>
@@ -26,18 +26,18 @@
           <h6 class="title_text">Base Application Details</h6>
         </div>
         <div class="col-md-12 col-sm-12 col-xs-12 center-text mar-t-10" *ngFor="let element of dataSource">
-          <div class="col-md-1 col-sm-4 col-xs-4 ">
+          <div class="col-md-1 col-sm-1 col-xs-1">
             <mat-radio-button color="primary"></mat-radio-button>
           </div>
-          <div class="col-md-3 col-sm-4 col-xs-4 ">
+          <div class="col-md-3 col-sm-11 col-xs-11">
             <p class="block">Application # </p>
             <p class="block">{{element.Application}}</p>
           </div>
-          <div class="col-md-4 col-sm-4 col-xs-4">
+          <div class="col-md-4 col-sm-12 col-xs-12">
             <p class="block">Destination Country</p>
             <p class="block">{{element.destination}}</p>
           </div>
-          <div class="col-md-4 col-sm-4 col-xs-4">
+          <div class="col-md-4 col-sm-12 col-xs-12">
             <p class="block">Request Sub Type</p>
             <p class="block">{{element.request}}</p>
 
@@ -213,7 +213,7 @@
           <input matInput placeholder="Competency Eligiblity" value="Competency Eligiblity" readonly>
         </mat-form-field>
       </div>
-      <div *ngIf="workPermitProcessingFlag">
+      <div *ngIf="extensionflag">
         <div class="col-md-12 col-sm-12 col-xs-12">
           <mat-checkbox color="primary" (change)=selectAllDependent($event) [(ngModel)]="selectAllDepent">Select All The Dependencies</mat-checkbox>
         </div>
@@ -228,7 +228,7 @@
   </div>
   <!-- <div class="col-md-1 col-sm-1 col-xs-1">
   </div> -->
-  <div class="col-md-3 col-sm-3 col-xs-3 disclaimer  ">
+  <div class="col-md-3 col-sm-12 col-xs-12 disclaimer  ">
     <p class="title-disc">Disclaimer</p>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla tenetur voluptatem cumque nobis fugiat excepturi, ut officia,
       sapiente nam quis, natus laboriosam provident dicta necessitatibus enim a nisi dolores distinctio? Lorem ipsum dolor
