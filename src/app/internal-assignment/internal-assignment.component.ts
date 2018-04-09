@@ -13,8 +13,8 @@ export class InternalAssignmentComponent implements OnInit {
   /** Global Variables */
   public assinmentType: boolean = true;
   public flagOtherDetails: boolean;
-  public extensionflag:boolean=false;
-  public selectAllDepent = false;
+  public extensionflag: boolean = false;
+  public selectAllDepent=false;
   public workPermitProcessingFlag: boolean = true;
   public dataSource: any = [];
   public visaType: any = [];
@@ -59,20 +59,20 @@ export class InternalAssignmentComponent implements OnInit {
   public setVisaType(type) {
     if (type.value === 1) {
       this.workPermitProcessingFlag = false;
-      this.extensionflag=false;
-      this.flagOtherDetails=true;
+      this.extensionflag = false;
+      this.flagOtherDetails = true;
     } else if (type.value === 2) {
       this.workPermitProcessingFlag = false;
-      this.extensionflag=false;
+      this.extensionflag = false;
     }
     else if (type.value === 4) {
       this.workPermitProcessingFlag = true;
-      this.extensionflag=true;
-      this.flagOtherDetails=true;
+      this.extensionflag = true;
+      this.flagOtherDetails = true;
 
     } else {
       this.workPermitProcessingFlag = true;
-      this.extensionflag=false;
+      this.extensionflag = false;
     }
 
   }
@@ -99,8 +99,8 @@ export class InternalAssignmentComponent implements OnInit {
     this.projects = response[0].projects;
     this.customers = response[0].customers;
     this.authority = response[0].authority;
-    this.dataSource=response[0].dataSource;
-    this.visaType=response[0].visaType;
+    this.dataSource = response[0].dataSource;
+    this.visaType = response[0].visaType;
   }
 }
 export interface Element {

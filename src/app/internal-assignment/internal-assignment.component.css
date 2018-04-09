@@ -109,6 +109,9 @@ background-color:darkblue;
 .padding-left{
     padding-left: 0px;
 }
+.bold{
+    font-weight: bold;
+}
 .tile {
     width: 60px;
     height: 60px;
