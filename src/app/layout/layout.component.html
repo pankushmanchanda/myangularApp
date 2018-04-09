@@ -1,63 +1,67 @@
 <div class="container-fluid header_cls">
+  <!--  Header Starts-->
   <div id="GIMS_logo" class="row">
     <div class="col-sm-2">
+      <!-- Side Nav Bar Starts -->
       <div class="col-sm-3 sidenav" id="mySidenav">
-        <button class=" btndef_none icon-burger_menu toggle-btn" data-toggle="collapse" data-target="#menu-content" aria-label="menu" (click)="openMeu()">
+        <button class=" btndef_none icon-burger_menu toggle-btn" aria-label="menu" (click)="openMeu($event)">
           <span class="title_cls">{{title}}</span>
         </button>
         <div id="sidebar-wrapper">
-          <ul class="sidebar-nav nav-pills nav-stacked" id="#menu-content">
+          <ul class="sidebar-nav nav-pills nav-stacked" id="menu-content">
 
-            <li >
+            <li>
               <a href="#" title="Home">
-                <span class="pull-left margin-left-minus" >
+                <span class="pull-left margin-left-minus">
                   <i class="icon-home"></i>
                 </span>Home</a>
             </li>
             <li class="active" title="Intitiate">
               <a href="#">
-                <span class="pull-left margin-left-minus" >
+                <span class="pull-left margin-left-minus">
                   <i class="icon-circle_add"></i>
                 </span> Intitiate</a>
             </li>
             <li>
               <a href="#" title="My Applications">
-                <span class="pull-left margin-left-minus" >
+                <span class="pull-left margin-left-minus">
                   <i class="icon-Initiate"></i>
                 </span>My Applications</a>
             </li>
             <li>
               <a href="#" title="My Tasks">
-                <span class="pull-left margin-left-minus" >
+                <span class="pull-left margin-left-minus">
                   <i class="icon-assessment"></i>
                 </span>My Tasks</a>
             </li>
             <li>
               <a href="#" title="Knowledge Base">
-                <span class="pull-left margin-left-minus" >
+                <span class="pull-left margin-left-minus">
                   <i class="icon-map"></i>
                 </span>Knowledge Base</a>
             </li>
           </ul>
         </div>
       </div>
+      <!-- Side Nav Bar Ends -->
       <h1 class="pull-left  title_cls">Wipro GIMS</h1>
     </div>
     <div class="col-sm-6"></div>
     <div id="GIMS_options" class="col-sm-3 float-right paddingtop10">
-
       <button routerLink="/" class="float-right btndef_none icon-logout" aria-label="Logout" title="Logout"></button>
-      <img class="round shadow-box float-right" aria-label="GIMS" src="assets/user.png" />
+      <img class="round shadow-box float-right" aria-label="GIMS" src="assets/uselogo_fixedr.png" />
       <button routerLink="/" class="float-right btndef_none icon-settings" aria-label="Settings" title="Settings"></button>
     </div>
   </div>
 </div>
-
+<!--  Header Ends-->
+<!-- Main Content Area -->
 <div id="dash" class="container-fluid full-height">
   <div class="layout-bg">
     <div class="col-md-12 col-sm-12 col-xs-12"> </div>
     <div class="col-md-2 col-sm-2 col-xs-2"></div>
-    <div class="col-md-2 col-sm-2 col-xs-10 padding-t-30" >
+    <!-- Prograss Bar Starts -->
+    <div class="col-md-2 col-sm-2 col-xs-10 padding-t-30">
       <h4 class="title-text"> Intiate a New Request</h4>
       <ul class="checkout-bar">
         <li class="nav-progress active-tab">
@@ -86,7 +90,10 @@
         </li>
       </ul>
     </div>
-    <div class="col-md-8 col-sm-6 col-xs-12 mar-t-10">
+    <!-- Prograss Bar Ends -->
+    <div class="col-md-2 col-sm-1 col-xs-1"></div>
+    <!-- Child Components -->
+    <div class="col-md-8 col-sm-11 col-xs-11 mar-t-10">
       <router-outlet></router-outlet>
     </div>
   </div>

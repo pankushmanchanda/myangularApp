@@ -131,6 +131,30 @@ background-color:darkblue;
 .mar-t-10{
     margin-top: 10px;
 }
+
+.mat-radio-button {
+color: grey;
+font-size: 13px;
+  }
+.tile>label {
+    color: #7e7e7e;
+    margin-top: 5px;
+    display: inline-block;
+    width: 60px;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+}
+
+.round-label:hover {
+    -webkit-transition: box-shadow 0.3s ease-out;
+    -moz-transition: box-shadow 0.3s ease-out;
+    -o-transition: box-shadow 0.3s ease-out;
+    transition: box-shadow 0.3s ease-out;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
 @media (max-width: 600px) {
     .card{
         height:1300px;
@@ -168,27 +192,5 @@ background-color:darkblue;
     color:#b3ff66;
 
 }
-
-}
-.mat-radio-button {
-color: grey;
-font-size: 13px;
-  }
-.tile>label {
-    color: #7e7e7e;
-    margin-top: 5px;
-    display: inline-block;
-    width: 60px;
-    white-space: nowrap;
-    overflow: hidden !important;
-    text-overflow: ellipsis;
-}
-
-.round-label:hover {
-    -webkit-transition: box-shadow 0.3s ease-out;
-    -moz-transition: box-shadow 0.3s ease-out;
-    -o-transition: box-shadow 0.3s ease-out;
-    transition: box-shadow 0.3s ease-out;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }

@@ -1,3 +1,5 @@
+
+/*----------------------------------------------------Css Class Starts----------------------------------------------*/
 .header_cls {
   background-color: #fff;
   min-height: 20px;
@@ -26,36 +28,7 @@
   z-index: 1002;
   top: 0;
 }
-.icon-burger_menu::before{
-  content: "\e918";
-}
-.icon-Initiate::before{
-  content: "\e9e9";
-}
-.icon-map::before{
-  content: "\e95b";
-}
-.icon-assessment::before{
-content: "\e910";
-}
-.icon-burger_menu::before,
-.icon-circle_add::before,
-.icon-home::before,
-.icon-Initiate::before,
-.icon-map::before,
-.icon-assessment::before{
-  font-size: 30px;
-  color: #060707;
-  margin: 15px;
-}
-.icon-burger_menu:hover::before,
-.icon-circle_add:hover::before,
-.icon-home:hover::before,
-.icon-Initiate:hover::before,
-.icon-map:hover::before,
-.icon-assessment:hover::before{
-  color: #687a88;
-}
+
 form input {
   margin-top: 5px;
   border: none;
@@ -89,44 +62,6 @@ form input {
 .title_cls {
   font-size: 16px;
   line-height: 24px;
-}
-
-.icon-help:before,
-.icon-notifications:before,
-.icon-logout:before,
-.icon-settings:before {
-  font-size: 22px;
-  color: #bbbebf;
-  margin: 20px;
-}
-
-.icon-help:hover::before,
-.icon-notifications:hover::before,
-.icon-logout:hover::before,
-.icon-settings:hover::before {
-  color: #687a88;
-}
-
-.icon-circle_add::before{
-  content:"\e920";
-}
-.icon-home::before{
-  content:"\e98e";
-}
-.icon-logout::before {
-  content: "\e959";
-}
-
-.icon-settings:before {
-  content: "\e975";
-}
-
-.icon-notifications:before {
-  content: "\e963";
-}
-
-.icon-help:before {
-  content: "\e989";
 }
 
 .float-right{
@@ -167,6 +102,7 @@ form input {
     width:100%;
 
   }
+  
   .full-height{
       height: 100%;
       width:100%
@@ -196,18 +132,113 @@ form input {
     border-radius: 2px;
     padding:8px 0 0 8px
   }
-  .sidenav {
-    height: 100%;
-    width: 4%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color:#ffd633;
-    overflow: hidden;
-    transition: 0.5s;
-    padding-top: 10px;
-    padding-left: 0;
+ 
+
+li:hover {
+  color: #f1f1f1;
+}
+.margin-left-minus{
+  margin-left:-50px
+ }
+ .padding-t-30{
+   padding-top: 30px;
+ }
+
+.no-margin{
+    margin:0;
+}
+
+/*----------------------------------------------------Css Class Starts----------------------------------------------*/
+
+
+
+/*------------------------------------------------Icons Starts --------------------------------------------------*/
+
+
+.icon-burger_menu::before{
+  content: "\e918";
+}
+.icon-Initiate::before{
+  content: "\e9e9";
+}
+.icon-map::before{
+  content: "\e95b";
+}
+.icon-assessment::before{
+content: "\e910";
+}
+.icon-burger_menu::before,
+.icon-circle_add::before,
+.icon-home::before,
+.icon-Initiate::before,
+.icon-map::before,
+.icon-assessment::before{
+  font-size: 30px;
+  color: #060707;
+  margin: 15px;
+}
+.icon-burger_menu:hover::before,
+.icon-circle_add:hover::before,
+.icon-home:hover::before,
+.icon-Initiate:hover::before,
+.icon-map:hover::before,
+.icon-assessment:hover::before{
+  color: #687a88;
+}
+.icon-help:before,
+.icon-notifications:before,
+.icon-logout:before,
+.icon-settings:before {
+  font-size: 22px;
+  color: #bbbebf;
+  margin: 20px;
+}
+
+.icon-help:hover::before,
+.icon-notifications:hover::before,
+.icon-logout:hover::before,
+.icon-settings:hover::before {
+  color: #687a88;
+}
+
+.icon-circle_add::before{
+  content:"\e920";
+}
+.icon-home::before{
+  content:"\e98e";
+}
+.icon-logout::before {
+  content: "\e959";
+}
+
+.icon-settings:before {
+  content: "\e975";
+}
+
+.icon-notifications:before {
+  content: "\e963";
+}
+
+.icon-help:before {
+  content: "\e989";
+}
+
+/*--------------------------------------------------------Icons Ends*------------------------------------------*/
+
+/*--------------------------------------------------------Side Nav Starts-------------------------------------*/
+
+.sidenav {
+  height: 100%;
+  width: 4%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:#ffd633;
+  overflow: hidden;
+  transition: 0.5s;
+  padding-top: 10px;
+  padding-left: 0;
 }
 .sidenav li {
   text-indent: 15px;
@@ -222,228 +253,251 @@ form input {
   display: block;
   transition: 0.3s;
 }
-
-li:hover {
-  color: #f1f1f1;
+.sidenav:hover{
+  width:15%
 }
 
-/* Media Queries for Breakpoints*/
-  @media (max-width: 980px) {}
-
-  @media (max-width: 600px) {
-    .layout-bg{
-      background-color:#ECEDF7;
-      height: 100%;
-      display: block;
-      width:100%;
-    }
-    .nav-progress{
-      height:40px;
-      border-radius: 2px;
-      padding:8px 0 0 8px
-    }
-    .dot {
-      height: 10px;
-      width: 10px;
-      background-color: #bbb;
-      border-radius: 50%;
-      display: inline-block;
-      margin-top:0;
-    }
-    .icon-help:before,
-    .icon-notifications:before,
-    .icon-logout:before,
-    .icon-settings:before {
-        font-size: 18px;
-        color: #bbbebf;
-        margin: 4px;
-    }
-    .header_cls {
-      background-color: #fff;
-      min-height: 20px;
-      z-index: 1;
-      margin-left: 25px;
-      -webkit-box-shadow: 0 4px 6px -6px #999;
-      -moz-box-shadow: 0 4px 6px -6px #999;
-      box-shadow: 0 4px 6px -6px #999;
-    }
-    .sidenav {
-      height: 100%;
-      width: 4%;
-      position: fixed;
-      z-index: 1;
-      top: 0;
-      left: 0;
-      background-color:white;
-      overflow-x: hidden;
-      transition: 0.5s;
-      padding-top: 10px;
-      padding-left: 0;
-  }
-  .icon-burger_menu::before,
-.icon-circle_add::before,
-.icon-home::before,
-.icon-Initiate::before,
-.icon-map::before,
-.icon-assessment::before{
-  font-size: 15px;
-  color: #060707;
-  margin: 15px;
-}
-
-  }
-  
-  @media (max-width: 481px) {
-    .layout-bg{
-      background-color:#ECEDF7;
-      height: 100%;
-      display: block;
-      width:100%;
-    }
-    .nav-progress{
-      height:40px;
-      border-radius: 2px;
-      padding:0 0 0 0;
-    }
-    .dot {
-      height: 10px;
-      width: 10px;
-      background-color: #bbb;
-      border-radius: 50%;
-      display: inline-block;
-      margin-top:0;
-    }
-    .icon-help:before,
-    .icon-notifications:before,
-    .icon-logout:before,
-    .icon-settings:before {
-        font-size: 18px;
-        color: #bbbebf;
-        margin: 4px;
-    }
-    .header_cls {
-      background-color: #fff;
-      min-height: 20px;
-      z-index: 1;
-      margin-left: 25px;
-      -webkit-box-shadow: 0 4px 6px -6px #999;
-      -moz-box-shadow: 0 4px 6px -6px #999;
-      box-shadow: 0 4px 6px -6px #999;
-    }
-    .sidenav {
-      height: 100%;
-      width: 0;
-      position: fixed;
-      z-index: 1;
-      top: 0;
-      left: 0;
-      background-color:white;
-      overflow-x: hidden;
-      transition: 0.5s;
-      padding-top: 10px;
-      padding-left: 0;
-  }
-  .icon-burger_menu::before,
-.icon-circle_add::before,
-.icon-home::before,
-.icon-Initiate::before,
-.icon-map::before,
-.icon-assessment::before{
-  font-size: 15px;
-  color: #060707;
-  margin: 15px;
-}
-
-  }
-
- /* Toggle Styles */
- 
- #wrapper {
-    padding-left: 0;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-    overflow: hidden;
-}
- 
-#wrapper.toggled {
-    padding-left: 250px;
-}
- 
 #sidebar-wrapper {
-    z-index: 1000;
-    position: absolute; 
-    left: 250px;
-    width: 0;
-    height: 100%;
-    padding-left: 0;
-    overflow-x: hidden;
-    margin-left: -250px;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+  z-index: 1000;
+  position: absolute; 
+  left: 250px;
+  width: 0;
+  height: 100%;
+  padding-left: 0;
+  overflow-x: hidden;
+  margin-left: -250px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
-/* Sidebar Styles */
- 
 .sidebar-nav {
-    position: absolute;
-    top: 0;
-    width: 250px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    margin-top: 2px;
+  position: absolute;
+  top: 0;
+  width: 250px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-top: 2px;
 }
- 
+
 .sidebar-nav li {
-    text-indent: 15px;
-    line-height: 40px;
+  text-indent: 15px;
+  line-height: 40px;
 }
- 
+
 .sidebar-nav li a {
-    display: block;
-    text-decoration: none;
-    color: #999999;
+  display: block;
+  text-decoration: none;
+  color: #999999;
 }
- 
+
 .sidebar-nav li a:hover {
-    text-decoration: none;
-    color: #fff;
-    background: rgba(5, 0, 0, 0.2);
-    border-left: red 2px solid;
+  text-decoration: none;
+  color: #fff;
+  background: rgba(5, 0, 0, 0.2);
+  border-left: red 2px solid;
 }
- 
+
 .sidebar-nav li a:active,
 .sidebar-nav li a:focus {
-    text-decoration: none;
+  text-decoration: none;
 }
- .margin-left-minus{
-  margin-left:-50px
- }
- .padding-t-30{
-   padding-top: 30px;
- }
 .sidebar-nav > .sidebar-brand {
-    height: 65px;
-    font-size: 18px;
-    line-height: 60px;
+  height: 65px;
+  font-size: 18px;
+  line-height: 50px;
 }
- 
+
 .sidebar-nav > .sidebar-brand a {
-    color: #999999;
+  color: #999999;
 }
- 
+
 .sidebar-nav > .sidebar-brand a:hover {
-    color: #fff;
-    background: none;
+  color: #fff;
+  background: none;
 }
-.no-margin{
-    margin:0;
+
+#wrapper {
+  padding-left: 0;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  overflow: hidden;
 }
+
+#wrapper.toggled {
+  padding-left: 250px;
+}
+.sidebar-width{
+width: 15px;
+}
+
+/*----------------------------------------------------side bar ends---------------------------------------------*/
+
+
  
+ 
+
+/* ---------------------------------------------Media Queries for Breakpoints----------------------------------*/
+@media (max-width: 980px) {}
+
+@media (max-width: 600px) {
+  .layout-bg{
+    background-color:#ECEDF7;
+    height: 100%;
+    display: block;
+    width:100%;
+  }
+  .nav-progress{
+    height:40px;
+    border-radius: 2px;
+    padding:8px 0 0 8px
+  }
+  .dot {
+    height: 10px;
+    width: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top:0;
+  }
+  .icon-help:before,
+  .icon-notifications:before,
+  .icon-logout:before,
+  .icon-settings:before {
+      font-size: 18px;
+      color: #bbbebf;
+      margin: 4px;
+  }
+  .header_cls {
+    background-color: #fff;
+    min-height: 20px;
+    z-index: 1;
+    margin-left: 25px;
+    -webkit-box-shadow: 0 4px 6px -6px #999;
+    -moz-box-shadow: 0 4px 6px -6px #999;
+    box-shadow: 0 4px 6px -6px #999;
+  }
+
+.icon-burger_menu::before,
+.icon-circle_add::before,
+.icon-home::before,
+.icon-Initiate::before,
+.icon-map::before,
+.icon-assessment::before{
+font-size: 15px;
+color: #060707;
+margin: 15px;
+}
+
+}
+
+@media (max-width: 481px) {
+  .layout-bg{
+    background-color:#ECEDF7;
+    height: 100%;
+    display: block;
+    width:100%;
+  }
+  .nav-progress{
+    height:40px;
+    border-radius: 2px;
+    padding:0 0 0 0;
+  }
+  .dot {
+    height: 10px;
+    width: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top:0;
+  }
+  .icon-help:before,
+  .icon-notifications:before,
+  .icon-logout:before,
+  .icon-settings:before {
+      font-size: 18px;
+      color: #bbbebf;
+      margin: 4px;
+  }
+  .header_cls {
+    background-color: #fff;
+    min-height: 20px;
+    z-index: 1;
+    margin-left: 25px;
+    -webkit-box-shadow: 0 4px 6px -6px #999;
+    -moz-box-shadow: 0 4px 6px -6px #999;
+    box-shadow: 0 4px 6px -6px #999;
+  }
+  #wrapper {
+    padding-left: 250px;
+}
+.fixed-brand{
+    width: 250px;
+}
+#wrapper.toggled {
+    padding-left: 0;
+}
+
+#sidebar-wrapper {
+    width: 250px;
+}
+.sidenav li {
+  text-indent: 15px;
+  line-height: 40px;
+  width:150px;
+}
+.sidenav a {
+  padding: 8px 8px 0 32px;
+  text-decoration: none;
+  font-size: 10px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+    .sidenav {
+    width: 10%;
+    height:100%
+    }
+    .sidenav:hover{
+      width: 40%
+    }
+    .margin-left-minus{
+      margin-left:-250;
+    }
+    .sidebar-nav li a:hover {
+      text-decoration: none;
+      color: #fff;
+      background: rgba(5, 0, 0, 0.2);
+      border-left: red 2px solid;
+    }
+    
+  .icon-burger_menu::before,
+  .icon-circle_add::before,
+  .icon-home::before,
+  .icon-Initiate::before,
+  .icon-map::before,
+  .icon-assessment::before{
+  font-size: 15px;
+  color: #060707;
+  margin: 15px;
+  }
+  .sidebar-nav li {
+    text-indent: 15px;
+    line-height: 30px;
+  }
+  .sidebar-width{
+    width:40%;
+  }
+  button{
+    font-size:10px;
+  }
+
+}
+
 @media(min-width:768px) {
     #wrapper {
         padding-left: 250px;
@@ -459,26 +513,3 @@ li:hover {
         width: 250px;
     }
   }
-    @media(min-width:481px) {
-      #wrapper {
-          padding-left: 250px;
-      }
-      .fixed-brand{
-          width: 250px;
-      }
-      #wrapper.toggled {
-          padding-left: 0;
-      }
-   
-      #sidebar-wrapper {
-          width: 250px;
-      }
-      .sidenav a {
-        padding: 8px 8px 8px 32px;
-        text-decoration: none;
-        font-size: 15px;
-        color: #818181;
-        display: block;
-        transition: 0.3s;
-      }
-}

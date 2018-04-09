@@ -4,7 +4,7 @@
    -Created by Pankush Manchanda on April , 2018 
 */
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule ,CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http'
@@ -46,15 +46,16 @@ const appRoutes: Routes = [
       {
         path: 'othersInternalAssignment',
         component: OthersInternalAsignmentsComponent,
-        children:[{
-          path:'workPermitStaging',
-          component:WorkPermitStagingComponent
+        children: [{
+          path: 'workPermitStaging',
+          component: WorkPermitStagingComponent
         }]
       }]
     }],
   }];
 
 
+ /*Export and Import of Modules */ 
 @NgModule({
   declarations: [
     AppComponent,
@@ -73,11 +74,11 @@ const appRoutes: Routes = [
     MaterialModule,
     RouterModule.forRoot(
       appRoutes,
-      { enableTracing: true ,useHash:true }
+      { enableTracing: true, useHash: true }
       // <-- debugging purposes only
     )
   ],
-  schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [DataService],
   bootstrap: [AppComponent]
 })

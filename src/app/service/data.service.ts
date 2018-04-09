@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
-import { Http,HttpModule, Response, Headers, RequestOptions } from '@angular/http';
+import { Http, HttpModule, Response, Headers, RequestOptions } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http'
-import {Observable} from 'rxjs/Rx';
+import { Observable } from 'rxjs/Rx';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
 
@@ -10,13 +10,13 @@ import 'rxjs/add/operator/catch';
 export class DataService {
 
   constructor(private http: Http) {
-}
-
-public getJSON(): Observable<any> {
+  }
+/** method to get the data from json file */
+  public getJSON(): Observable<any> {
     return this.http.get("assets/data.json")
-                    .map((res:any) => res.json())
+      .map((res: any) => res.json())
 
 
-}
+  }
 
 }

@@ -62,7 +62,9 @@
     color:#b3ff66;
 
 }
-
+.navbar-width{
+    width :15%
+}
 .test {
     width:200px;
     display:inline-block;

@@ -14,15 +14,19 @@ export class LayoutComponent implements OnInit {
 
   ngOnInit() {
   }
-  openMeu() {
-    if (!this.show) {
-      document.getElementById("mySidenav").style.width = "15%";
-      this.show = true;
-    }else{
-      document.getElementById("mySidenav").style.width = "4%";
-      this.title = "";
-      this.show = false;
-    }
+  openMeu(event) {
+    // if (!this.show) {
+    //   debugger;
+    //   //event.target.parentElement.classList.add('sidebar-width');
+    //   document.getElementById("mySidenav").style.width = "15%";
+    //   this.show = true;
+    // } else {
+
+    //   // event.target.parentElement.classList.remove('sidebar-width');
+    //   document.getElementById("mySidenav").style.width = "4%";
+    //   this.title = "";
+    //   this.show = false;
+    // }
   }
 
 
